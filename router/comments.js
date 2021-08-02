@@ -6,19 +6,6 @@ app.use(bodyParser());
 
 const firebase = require("firebase");
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyCHITjVbK6NQldafzqpxj-0aZ9ZxWgZRG0",
-//   authDomain: "reddit-task-35480.firebaseapp.com",
-//   projectId: "reddit-task-35480",
-//   storageBucket: "reddit-task-35480.appspot.com",
-//   messagingSenderId: "574087501468",
-//   appId: "1:574087501468:web:e7186f74a41f443b0d7f59",
-//   databaseURL:
-//     "https://reddit-task-35480-default-rtdb.europe-west1.firebasedatabase.app",
-// };
-
-// firebase.initializeApp(firebaseConfig);
-
 let database = firebase.database();
 
 router.get("/comments", async (ctx, next) => {
